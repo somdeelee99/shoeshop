@@ -1,0 +1,73 @@
+name: shoe_store
+description: Shoe Store - Step Your Style. A modern e-commerce Flutter app built with GetX (MVVM).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management, Routing, Dependency Injection
+  get: ^4.7.2
+
+  # API Client
+  dio: ^5.8.0+1
+
+  # Responsive UI
+  flutter_screenutil: ^5.9.3
+
+  # UI Animation
+  flutter_animate: ^4.5.2
+  lottie: ^3.3.1
+  smooth_page_indicator: ^1.2.1
+
+  # Images and Icons
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.0.17
+  shimmer: ^3.0.0
+
+  # Splash Screen
+  flutter_native_splash: ^2.4.8
+
+  # Local Storage
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+
+  # Date and Currency Formatting
+  intl: ^0.20.2
+
+  # Authentication
+  google_sign_in: ^6.3.0
+  sign_in_with_apple: ^6.1.4
+
+  # Firebase and Push Notifications
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# Native splash configuration (flutter_native_splash)
+flutter_native_splash:
+  color: "#111114"
+  image: assets/images/splash_shoe.png
+  android_12:
+    color: "#111114"
+    image: assets/images/splash_shoe.png
+  android: true
+  ios: true
+  web: false
+  fullscreen: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/

@@ -1,0 +1,26 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Platform generated
+**/Generated.xcconfig
+**/flutter_export_environment.sh
+**/gradle-wrapper.jar
+.gradle/
+local.properties
+key.properties
+*.keystore
+*.jks
+
+# Misc
+*.log
+.DS_Store
