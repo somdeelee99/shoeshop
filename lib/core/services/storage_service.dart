@@ -37,8 +37,7 @@ class StorageService {
   static Future<void> setToken(String token) =>
       _secure.write(key: AppConstants.keyToken, value: token);
 
-  static Future<String?> getToken() =>
-      _secure.read(key: AppConstants.keyToken);
+  static Future<String?> getToken() => _secure.read(key: AppConstants.keyToken);
 
   static Future<void> deleteToken() =>
       _secure.delete(key: AppConstants.keyToken);
@@ -49,8 +48,7 @@ class StorageService {
   static Future<String?> getSecure(String key) => _secure.read(key: key);
 
   // ---------- Convenience ----------
-  static bool get isOnboardingDone =>
-      getBool(AppConstants.keyOnboardingDone);
+  static bool get isOnboardingDone => getBool(AppConstants.keyOnboardingDone);
 
   static Future<void> completeOnboarding() =>
       setBool(AppConstants.keyOnboardingDone, true);
